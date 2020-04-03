@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7af297a2-8063-4ab7-a49b-185b23fcc5f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/FPP3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FPP3/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/FPP3/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FPP3/spiders/baidubaike.py" beforeDir="false" afterPath="$PROJECT_DIR$/FPP3/spiders/baidubaike.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,13 +23,20 @@
         <option value="moom" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1a0h2pC0h4Paxynp7hlcKrtWgIs" />
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,7 +60,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585878213563</updated>
-      <workItem from="1585878224613" duration="1166000" />
+      <workItem from="1585878224613" duration="1692000" />
+      <workItem from="1585879942014" duration="4272000" />
+      <workItem from="1585901596867" duration="3053000" />
     </task>
     <servers />
   </component>
@@ -64,7 +74,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -72,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试合并" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试合并" />
+    <MESSAGE value="结构爬取" />
+    <option name="LAST_COMMIT_MESSAGE" value="结构爬取" />
   </component>
 </project>
