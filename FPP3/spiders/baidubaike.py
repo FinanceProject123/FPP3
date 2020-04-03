@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import re
+
 import scrapy
 from FPP3.items import BaiduBaike
 from scrapy import Request
@@ -22,16 +24,20 @@ class BaiDuItem(scrapy.Spider):
         item = BaiduBaike()
         all_text = response.xpath(
             "//div[@class='main-content']/div[contains(@class, 'para-title') or contains(@class ,'para')]")
-        print(all_text)
-        i,flag = 0,False
+        item['title'] = '玉米'
+        para = ''
         # 将数据按照标题存入item
-        # while i<len(all_text):
-        #     if flag:
-        #         items.append(item)
-        #         flag = False
-        #     else:
-        #         item = BaiduBaike()
-        #         item['title_h1'] = all_text[i].xpath()
+        for text in all_text:
+            # 能否筛除掉不必要的标签信息，如：<a>编辑</a>、[12]等
+            # if '编辑' in text.xpath('string(.)').extract()[0]:
+            #     print(text.xpath('string(.)').extract()[0])
+            #     continue
+            symbols = r"[\s]"
+            temp = text.xpath('string(.)').extract()[0]
+            temp = re.sub(symbols,'\n',temp)
+            temp = '\n'.join([i for i in temp.split('\n') if len(i)>1])
+            para = para + temp
+        item['context'] = para
         # for para in paras:
         #     # print(type(para))
         #     # print(para)
